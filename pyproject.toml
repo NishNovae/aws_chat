@@ -6,7 +6,9 @@ authors = [
     {name = "Sehyeon", email = "raecrowned@gmail.com"},
     {name = "Kyuseok", email = "kyuseok000@gmail.com"}
 ]
-dependencies = []
+dependencies = [
+    "kafka-python>=2.0.2",
+]
 requires-python = "==3.8.*"
 readme = "README.md"
 license = {text = "MIT"}
