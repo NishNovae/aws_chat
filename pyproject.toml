@@ -8,6 +8,7 @@ authors = [
 ]
 dependencies = [
     "kafka-python>=2.0.2",
+    "aws-chat @ file:///${PROJECT_ROOT}/",
 ]
 requires-python = "==3.8.*"
 readme = "README.md"
