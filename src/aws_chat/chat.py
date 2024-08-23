@@ -12,7 +12,8 @@ def create_data(username, message, end):
 # SENDER
 def pchat(chatroom, username):
     sender = KafkaProducer(
-        bootstrap_servers = ['ec2-43-203-182-252.ap-northeast-2.compute.amazonaws.com:9092'],
+        bootstrap_servers = ['localhost:9092'],
+        # bootstrap_servers = ['ec2-43-203-182-252.ap-northeast-2.compute.amazonaws.com:9092'],
         value_serializer = lambda x: dumps(x).encode('utf-8'),
     )
 
