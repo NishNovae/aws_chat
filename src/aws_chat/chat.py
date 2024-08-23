@@ -52,7 +52,8 @@ def pchat(chatroom, username):
 def cchat(chatroom, username):
     receiver = KafkaConsumer(
         chatroom,
-        bootstrap_servers = ['ec2-43-203-182-252.ap-northeast-2.compute.amazonaws.com:9092'],
+        bootstrap_servers = ['localhost:9092'],
+        # bootstrap_servers = ['ec2-43-203-182-252.ap-northeast-2.compute.amazonaws.com:9092'],
         enable_auto_commit = True,
         value_deserializer = lambda x: loads(x.decode('utf-8'))
     )
